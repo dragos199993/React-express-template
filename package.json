@@ -1,0 +1,27 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "Boilerplate for react-express",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon --exec babel-node index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "react",
+    "express",
+    "boilerplate"
+  ],
+  "author": "Dragos Nedelcu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.14.7"
+  }
+}
